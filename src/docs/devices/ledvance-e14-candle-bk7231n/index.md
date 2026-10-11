@@ -6,14 +6,28 @@ standard: EU
 board: BK72XX
 ---
 
-<!-- Describe the device here. See the front-matter table on the contributing page for valid options. -->
+Later version of the Ledvance Smart+ WIFI candle bulb (bk7231n Chip, Firmware 1.3.21) - often sold in trio packs.
+
+Can be flashed with esphome kickstart via [tuya-cloudcutter](https://github.com/tuya-cloudcutter/tuya-cloudcutter) - Profile: profile OEM 1.3.21 
+
+## Product Images
+
+![LEDVANCE E14 RGBCW Candle](ldv-e14-candle.jpg "LEDVANCE E14 RGBCW Candle")
+
+## GPIO Pinout
+
+| Function  | GPIO-Pin |
+| --------- | -------- |
+| PWM_red   | P3       |
+| PWM_green | P2       |
+| PWM_blue  | P1       |
+| PWM_warm  | P4       |
+| PWM_cold  | P5       |
 
 ## Basic Configuration
 
 ```yaml
 #Ledvance Smart+ WIFI bk7231n E14 Candle
-#Later version of the Ledvance Smart+ WIFI candle bulb (Firmware 1.3.21) - often sold in trio packs
-#Can be flashed OTA with tuya-cloudcutter, profile OEM 1.3.21 
 
 substitutions:
   device_name: ledvance-e14-candle
